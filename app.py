@@ -277,7 +277,7 @@ with col2:
             )
 
 st.divider()
-st.subheader("📈 Quick Stats (this user)")
+st.subheader("Quick Stats (this user)")
 stats = pd.read_sql(
     text("""
     SELECT event_type, COUNT(*) AS cnt
