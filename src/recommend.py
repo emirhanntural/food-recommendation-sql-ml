@@ -10,7 +10,6 @@ load_dotenv()
 DB_URL = os.getenv("DATABASE_URL", "postgresql://localhost:5432/foodrec")
 
 def make_feature_text(df: pd.DataFrame) -> pd.Series:
-    # Ingredients yok -> main_ingredient + cuisine + category + difficulty üzerinden benzerlik
     def clean(x):
         if x is None:
             return ""
@@ -45,7 +44,6 @@ def main(user_id: int = 1, top_k: int = 10):
 
     seed_id = int(seed.loc[0, "recipe_id"])
 
-    # 2) Tarif datasetini çek (recipe + main_ingredient)
     df = pd.read_sql(
         text("""
         SELECT
@@ -66,7 +64,6 @@ def main(user_id: int = 1, top_k: int = 10):
         engine
     )
 
-    # 3) Gösterim tekrarını engelle (son 20 impression)
     shown = pd.read_sql(
         text("""
         SELECT recipe_id
