@@ -1,10 +1,10 @@
 -- =========================
--- Food Recommendation DB Schema (PostgreSQL)
+-- Food Recommendation DB Schema (Click-based / Implicit Feedback)
 -- =========================
 
 -- Clean re-run
+DROP TABLE IF EXISTS events;
 DROP TABLE IF EXISTS recipe_ingredients;
-DROP TABLE IF EXISTS feedback;
 DROP TABLE IF EXISTS ingredients;
 DROP TABLE IF EXISTS recipes;
 DROP TABLE IF EXISTS users;
@@ -21,7 +21,7 @@ CREATE TABLE users (
 -- 2) recipes
 -- -------------------------
 CREATE TABLE recipes (
-  recipe_id        BIGINT PRIMARY KEY,   -- we will use CSV id as recipe_id
+  recipe_id        BIGINT PRIMARY KEY,   -- CSV id
   title            TEXT NOT NULL,
   prep_time_min    INT,
   category         TEXT,
@@ -41,8 +41,7 @@ CREATE TABLE ingredients (
 
 -- -------------------------
 -- 4) recipe_ingredients (many-to-many)
--- For now we'll store only main_ingredient from the CSV.
--- Later you can expand to multiple ingredients per recipe.
+-- For now: only main_ingredient => stored here as is_main=true
 -- -------------------------
 CREATE TABLE recipe_ingredients (
   recipe_id      BIGINT NOT NULL REFERENCES recipes(recipe_id) ON DELETE CASCADE,
@@ -52,23 +51,26 @@ CREATE TABLE recipe_ingredients (
 );
 
 -- -------------------------
--- 5) feedback (labels for ML)
--- label: 1=like, 0=dislike
+-- 5) events (implicit feedback)
+-- event_type: impression, click
+-- dwell_seconds: optional (time on recipe detail page)
+-- session_id: optional (ties events together in a browsing session)
 -- -------------------------
-CREATE TABLE feedback (
-  feedback_id   BIGSERIAL PRIMARY KEY,
-  user_id       BIGINT NOT NULL REFERENCES users(user_id) ON DELETE CASCADE,
-  recipe_id     BIGINT NOT NULL REFERENCES recipes(recipe_id) ON DELETE CASCADE,
-  label         SMALLINT NOT NULL CHECK (label IN (0, 1)),
-  source        TEXT,
-  created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
+CREATE TABLE events (
+  event_id       BIGSERIAL PRIMARY KEY,
+  user_id        BIGINT NOT NULL REFERENCES users(user_id) ON DELETE CASCADE,
+  recipe_id      BIGINT NOT NULL REFERENCES recipes(recipe_id) ON DELETE CASCADE,
+  event_type     TEXT NOT NULL CHECK (event_type IN ('impression', 'click')),
+  dwell_seconds  INT CHECK (dwell_seconds IS NULL OR dwell_seconds >= 0),
+  session_id     TEXT,
+  created_at     TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 -- -------------------------
--- Indexes (performance)
+-- Indexes
 -- -------------------------
-CREATE INDEX idx_feedback_user_time ON feedback(user_id, created_at DESC);
-CREATE INDEX idx_feedback_user_recipe ON feedback(user_id, recipe_id);
+CREATE INDEX idx_events_user_time ON events(user_id, created_at DESC);
+CREATE INDEX idx_events_user_type_time ON events(user_id, event_type, created_at DESC);
+CREATE INDEX idx_events_recipe_time ON events(recipe_id, created_at DESC);
 CREATE INDEX idx_recipe_ingredients_recipe ON recipe_ingredients(recipe_id);
 CREATE INDEX idx_ingredients_name ON ingredients(name);
-
