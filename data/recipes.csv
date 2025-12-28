@@ -1,0 +1,173 @@
+id,title,prep_time_min,category,cuisine,health_score,difficulty,main_ingredient
+0,artichoke hearts stuffed,35,veggie,Turkish,5,medium,artichoke
+1,artichoke in olive oil,32,veggie,Turkish,5,medium,artichoke
+2,ayran soup,15,soup,Turkish,4,easy,yogurt
+3,baja fish tacos,20,protein,Mexican,4,medium,fish
+4,baked cheese pasta,25,carb,Global,3,easy,pasta
+5,baked tofu and veggies,25,protein,Global,5,medium,tofu
+6,barbunya with carrots,28,legume,Turkish,5,easy,cranberry  beans
+7,bean and vegetable casserole,35,legume,Turkish,5,medium,mixed  beans
+8,bean burrito,18,legume,Mexican,4,easy,beans
+9,beef bulgogi,22,protein,Korean,3,medium,beef
+10,beef enchiladas,30,protein,Mexican,3,medium,beef
+11,black bean chili,25,legume,Mexican,5,easy,black  beans
+12,black eyed pea stew,28,legume,Turkish,5,easy,black  eyed  pea
+13,boiled vegetable plate,10,veggie,Turkish,5,easy,vegetables
+14,broccoli pasta bowl,18,veggie,Global,5,easy,pasta
+15,bulgur pilaf with beef,18,grain,Turkish,3,easy,beef
+16,bulgur salad,15,grain,Turkish,5,easy,bulgur
+17,carne asada,25,protein,Mexican,3,medium,beef
+18,carrot rice pilaf,18,grain,Turkish,4,easy,rice
+19,celery with orange,22,veggie,Turkish,5,medium,celery
+20,cheese mushroom quesadilla,8,carb,Mexican,3,easy,tortilla
+21,cheese spinach wrap,8,veggie,Mediterranean,4,easy,spinach
+22,chicken alfredo light,22,protein,Global,3,medium,pasta
+23,chicken and potatoes stew,30,protein,Turkish,4,easy,chicken
+24,chicken curry turkish style,20,protein,Turkish,4,easy,chicken
+25,chicken fajitas,20,protein,Mexican,4,medium,chicken
+26,chicken mushroom skewers,15,protein,Global,4,easy,chicken
+27,chicken noodles,14,carb,Asian,3,easy,chicken
+28,chicken potato stew,30,protein,Turkish,4,easy,chicken
+29,chicken saute,15,protein,Turkish,4,easy,chicken
+30,chicken teriyaki bowl,20,protein,Asian,4,medium,chicken
+31,chicken tortilla soup,22,soup,Mexican,4,easy,chicken
+32,chickpea and pepper stew,27,legume,Turkish,5,easy,chickpea
+33,chickpea pasta bowl,20,legume,Global,5,easy,pasta
+34,chickpea stew,25,legume,Turkish,5,medium,chickpea
+35,chickpea with eggplant,32,legume,Turkish,4,medium,chickpea
+36,chickpea zucchini stew,30,legume,Turkish,5,medium,chickpea
+37,chickpeas with veggies,25,legume,Turkish,5,medium,chickpea
+38,chiles rellenos,40,veggie,Mexican,4,hard,peppers
+39,chili noodle pasta mix,16,carb,Asian,3,easy,pasta
+40,chili noodle stir,10,carb,Asian,3,easy,noodles
+41,coconut chickpea curry,22,legume,Indian,5,medium,chickpea
+42,cranberry beans pilaki,30,legume,Turkish,5,easy,cranberry  beans
+43,creamy mushroom pasta,20,carb,Global,3,easy,pasta
+44,creamy penne with corn,17,carb,Global,3,easy,pasta
+45,crispy tofu bites,15,protein,Asian,5,easy,tofu
+46,cumin chickpea pan,12,legume,Turkish,5,easy,chickpea
+47,curry chickpeas,20,legume,Indian,5,easy,chickpea
+48,eggplant musakka,30,veggie,Turkish,3,medium,eggplant
+49,eggplant pan sauté,15,veggie,Turkish,4,easy,eggplant
+50,eggplant steak,20,veggie,Turkish,5,medium,eggplant
+51,eggplant tomato pasta,22,veggie,Turkish,4,medium,pasta
+52,ezogelin soup,18,soup,Turkish,4,medium,lentil
+53,fast mixed veggie stirfry,10,veggie,Asian,5,easy,vegetables
+54,fast veggie noodles,10,carb,Asian,4,easy,noodles
+55,fresh green beans in olive oil,20,veggie,Turkish,5,easy,green  beans
+56,garlic butter mushroom bowl,10,veggie,Global,4,easy,mushroom
+57,garlic butter spaghetti,12,carb,Italian,3,easy,pasta
+58,garlic spinach pasta,12,veggie,Global,4,easy,pasta
+59,ginger garlic shrimp,15,protein,Asian,4,easy,shrimp
+60,green lentil stew,25,legume,Turkish,5,medium,lentil
+61,green lentil stew,25,legume,Turkish,5,easy,lentil
+62,green lentils with bulgur,22,legume,Turkish,4,easy,lentil
+63,green peas with carrots,25,veggie,Turkish,5,easy,peas
+64,grilled chicken breast,18,protein,Turkish,5,easy,chicken
+65,grilled salmon,20,healthy,Global,5,medium,salmon
+66,grilled sea bass,22,healthy,Turkish,5,medium,seabass
+67,honey soy chicken,18,protein,Asian,3,easy,chicken
+68,imam bayildi,35,veggie,Turkish,5,medium,eggplant
+69,imam bayildi,35,veggie,Turkish,5,medium,eggplant
+70,kimchi fried rice,15,carb,Korean,3,easy,rice
+71,lemon garlic chicken strips,14,protein,Global,4,easy,chicken
+72,lemon herb pasta,14,healthy,Mediterranean,5,easy,pasta
+73,lemon pepper shrimps,10,protein,Mediterranean,4,easy,shrimp
+74,lemongrass chicken,20,protein,Thai,4,medium,chicken
+75,lentil and pumpkin stew,30,legume,Turkish,5,medium,lentil
+76,lentil bolognese pasta,25,legume,Global,5,medium,pasta
+77,lentil meatballs soup style,20,legume,Turkish,5,easy,lentil
+78,lentil soup,12,soup,Turkish,4,easy,lentil
+79,lentil soup (mercimek corbasi),15,soup,Turkish,4,easy,lentil
+80,lentil spinach stew,25,legume,Turkish,5,easy,lentil
+81,lentil tomato casserole,25,legume,Turkish,5,easy,lentil
+82,mashed chickpea taco,12,legume,Mexican,4,easy,chickpea
+83,meatball spaghetti,25,protein,Italian,3,medium,pasta
+84,meatball stew (sulu kofte),28,protein,Turkish,3,medium,beef
+85,meatballs with potatoes,28,protein,Turkish,3,medium,beef
+86,mediterranean olive pasta,15,healthy,Mediterranean,5,easy,pasta
+87,mexican rice bowl,15,grain,Mexican,4,easy,rice
+88,mexican stuffed peppers,35,veggie,Mexican,5,medium,peppers
+89,minced meat zucchini boats,30,protein,Turkish,3,medium,zucchini
+90,miso glazed eggplant,18,veggie,Japanese,5,easy,eggplant
+91,miso veggie soup,12,soup,Asian,5,easy,vegetables
+92,mixed legume hotpot,35,legume,Turkish,5,medium,mixed  legumes
+93,mung bean salad turkish style,18,legume,Turkish,5,easy,mung  bean
+94,mushroom saute,15,veggie,Turkish,4,easy,mushroom
+95,mushroom soy pasta,20,healthy,Asian,4,medium,pasta
+96,okra in olive oil,25,veggie,Turkish,5,medium,okra
+97,okra stew,25,veggie,Turkish,5,medium,okra
+98,olive oil green beans,25,veggie,Turkish,5,easy,green  beans
+99,oven baked chicken and veggies,28,protein,Turkish,5,easy,chicken
+100,parmesan butter fettuccine,15,carb,Italian,3,easy,pasta
+101,peanut butter veggie wrap,10,veggie,Global,4,easy,vegetables
+102,pepper egg scramble,7,protein,Turkish,3,easy,egg
+103,pesto angel hair,12,carb,Italian,4,easy,pasta
+104,potato bake,30,veggie,Turkish,3,hard,potato
+105,potato egg pan,14,veggie,Turkish,3,easy,potato
+106,pozole verde,35,soup,Mexican,4,medium,hominy
+107,quick chicken wrap,12,protein,Global,3,easy,chicken
+108,quick chili chicken,12,protein,Asian,3,easy,chicken
+109,quick lentil patty wrap,13,legume,Turkish,5,easy,lentil
+110,quinoa and vegetable stir fry,15,grain,Global,5,easy,quinoa
+111,red lentil kofte,20,legume,Turkish,5,easy,lentil
+112,roasted chickpeas with veggies,20,legume,Turkish,5,easy,chickpea
+113,roasted pepper pasta,20,veggie,Turkish,4,medium,pasta
+114,roasted tomato pennee,20,veggie,Italian,4,medium,pasta
+115,roasted vegetable plate,20,veggie,Global,5,easy,vegetables
+116,salsa rice,15,grain,Mexican,4,easy,rice
+117,sautéed green peas,10,veggie,Turkish,5,easy,peas
+118,sauteed mushrooms,12,veggie,Turkish,4,easy,mushroom
+119,sesame carrot stir,9,veggie,Asian,5,easy,carrot
+120,sesame garlic vegetables,12,veggie,Asian,5,easy,vegetables
+121,shrimp tacos,18,protein,Mexican,4,easy,shrimp
+122,spicy arrabbiata,15,carb,Italian,3,easy,pasta
+123,spicy chicken pasta,20,protein,Global,3,medium,pasta
+124,spicy egg rice,10,carb,Asian,3,easy,rice
+125,spicy egg tostada,9,protein,Mexican,3,easy,egg
+126,spicy red bean wrap,12,legume,Mexican,4,easy,red  beans
+127,spicy red lentil soup,15,soup,Turkish,5,easy,lentil
+128,spicy udon noodles,14,carb,Japanese,4,easy,noodles
+129,spicy white bean stir fry,22,legume,Turkish,4,easy,white  beans
+130,spinach feta pasta,17,carb,Turkish,4,easy,pasta
+131,spinach garlic pasta,16,veggie,Turkish,4,easy,pasta
+132,spinach stew,18,veggie,Turkish,5,easy,spinach
+133,spinach with egg,12,veggie,Turkish,5,easy,spinach
+134,stir fried rice noodles,15,carb,Asian,4,easy,noodles
+135,stuffed peppers veggie,35,veggie,Turkish,5,medium,peppers
+136,sweet and sour tofu,20,protein,Asian,4,medium,tofu
+137,tahini noodle bowl,12,carb,Asian,4,easy,noodles
+138,tahini vegan salad,10,healthy,MiddleEastern,5,easy,vegetables
+139,tahini veggie pasta,18,veggie,MiddleEastern,5,medium,pasta
+140,thai green curry,20,healthy,Thai,4,medium,vegetables
+141,tofu vegetable stir fry,18,protein,Asian,5,easy,tofu
+142,tomato basil pennee,18,carb,Italian,4,easy,pasta
+143,tomato bulgur pilaf,20,grain,Turkish,4,easy,bulgur
+144,tomato creamy spaghetti,18,carb,Italian,3,easy,pasta
+145,tomato eggplant stew,25,veggie,Turkish,4,medium,eggplant
+146,tomato feta flatbread,12,carb,Mediterranean,3,easy,flatbread
+147,tomato olive omelette,8,protein,Mediterranean,4,easy,egg
+148,tomato pasta,10,carb,Italian,2,easy,pasta
+149,tuna mayo pasta,14,protein,Global,3,easy,pasta
+150,tuna salad,8,healthy,Global,5,easy,tuna
+151,tuna sweetcorn sandwich,7,protein,Global,3,easy,tuna
+152,turlu mixed veggie stew,30,veggie,Turkish,5,medium,mixed  vegetables
+153,unshelled bean soup,20,legume,Turkish,4,easy,beans
+154,vegan chickpea bowl,18,legume,Global,5,easy,chickpea
+155,vegan manti with lentils,35,carb,Turkish,4,hard,lentil
+156,vegan noodle bowl,14,carb,Asian,4,easy,noodles
+157,vegan stuffed peppers,30,veggie,Turkish,5,medium,rice
+158,vegetarian musakka,30,veggie,Turkish,4,medium,eggplant
+159,veggie fajita,15,protein,Mexican,4,medium,chicken
+160,veggie pasta primavera,20,veggie,Global,5,easy,pasta
+161,veggie quesadilla,12,carb,Mexican,3,easy,tortilla
+162,veggie ramen,25,carb,Asian,4,medium,noodles
+163,veggie tacos,15,carb,Mexican,4,easy,tortilla
+164,white bean stew,28,legume,Turkish,4,easy,beans
+165,white bean stew,28,legume,Turkish,4,easy,white  beans
+166,yogurt cucumber bowl,6,healthy,Turkish,4,easy,yogurt
+167,yogurt dill pasta,12,carb,Turkish,4,easy,pasta
+168,yogurt garlic pasta (yoğurtlu makarna),10,carb,Turkish,3,easy,pasta
+169,zucchini cream pasta,18,veggie,Global,4,medium,pasta
+170,zucchini fritters (kabak mucver),20,veggie,Turkish,3,easy,zucchini
+171,zucchini stir fry,12,veggie,Turkish,5,easy,zucchini
